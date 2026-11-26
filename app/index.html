@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DompetKeluarga — Anggaran Rumah Tangga</title>
+<meta name="description" content="DompetKeluarga: anggaran rumah tangga Keluarga Rahma — dashboard, perencana anggaran, transaksi, tagihan, tabungan, dan laporan bulanan.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">DompetKeluarga<small>Anggaran rumah tangga Keluarga Rahma</small></div>
+  <nav aria-label="Halaman utama">
+    <a href="#/dashboard">Dashboard</a>
+    <a href="#/anggaran">Anggaran</a>
+    <a href="#/transaksi">Transaksi</a>
+    <a href="#/tagihan">Tagihan &amp; Langganan</a>
+    <a href="#/tabungan">Tabungan &amp; Tujuan</a>
+    <a href="#/laporan">Laporan</a>
+  </nav>
+  <label class="month-picker">Bulan
+    <select id="month-select" aria-label="Pilih bulan"></select>
+  </label>
+</header>
+<main id="view" aria-live="polite"></main>
+<footer>
+  <p>DompetKeluarga — situs anggaran rumah tangga untuk Keluarga Rahma, Jakarta.
+  Semua angka dihitung dari transaksi yang tercatat; tidak ada data yang dikirim ke mana pun.
+  <a href="#" id="reset-data">Atur ulang data ke keadaan awal</a>.</p>
+</footer>
+<script type="module" src="main.js"></script>
+</body>
+</html>
